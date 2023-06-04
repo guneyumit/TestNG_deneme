@@ -22,7 +22,6 @@ public class TestNGAssertionsDemo {
         System.out.println("Second Assertion");
         Assert.assertEquals("url","url");
 
-
     }
 
     @Test
@@ -30,14 +29,6 @@ public class TestNGAssertionsDemo {
         Assert.assertEquals("test2","test22","verify test2");
     }
 
-    @Test
-    public void test3(){
-        String expectedTitle ="Cyb";
-        String actualTitle = "Cybertek";
-
-        Assert.assertTrue(actualTitle.startsWith(expectedTitle),"Verify title starts with Cyb");
-
-    }
 
     @Test
     public void test4(){
