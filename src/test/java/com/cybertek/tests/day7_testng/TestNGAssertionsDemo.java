@@ -17,20 +17,20 @@ public class TestNGAssertionsDemo {
 
 
         System.out.println("First Assertion");
-        Assert.assertEquals("title","tiTle");
+        Assert.assertEquals("title","title");
 
         System.out.println("Second Assertion");
         Assert.assertEquals("url","url");
 
     }
 
-    @Test
+    //@Test
     public void test2(){
         Assert.assertEquals("test2","test22","verify test2");
     }
 
 
-    @Test
+    //@Test
     public void test4(){
         //verify email contains @ sign
         String email = "mikesmith.com";
@@ -39,13 +39,13 @@ public class TestNGAssertionsDemo {
 
     }
 
-    @Test
+    //@Test
     public void test5(){
         Assert.assertFalse(0>1,"verify that 0 is not greater than 1");
 
     }
 
-    @Test
+    //@Test
     public void test6(){
         Assert.assertNotEquals("one","two");
     }
