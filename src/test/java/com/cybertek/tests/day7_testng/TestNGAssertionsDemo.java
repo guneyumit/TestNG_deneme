@@ -14,6 +14,10 @@ public class TestNGAssertionsDemo {
     }
     @Test
     public void test1(){
+                
+        Driver.get().get(ConfigurationReader.get("url"));
+        Assert.assertEquals("Google",Driver.get().getTitle());
+        Driver.get().close();
 
 
         System.out.println("First Assertion");
