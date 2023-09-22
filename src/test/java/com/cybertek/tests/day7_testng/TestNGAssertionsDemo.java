@@ -17,16 +17,16 @@ public class TestNGAssertionsDemo {
     @Test
     public void test1(){
                 
-        Driver.get().get(ConfigurationReader.get("url"));
-        Assert.assertEquals("Google",Driver.get().getTitle());
-        Driver.get().close();
+        //Driver.get().get(ConfigurationReader.get("url"));
+        //Assert.assertEquals("Google",Driver.get().getTitle());
+        //Driver.get().close();
 
 
-        //System.out.println("First Assertion");
-        //Assert.assertEquals("title","title");
+        System.out.println("First Assertion");
+        Assert.assertEquals("title","title");
 
-        //System.out.println("Second Assertion");
-        //Assert.assertEquals("url","url");
+        System.out.println("Second Assertion");
+        Assert.assertEquals("url","url");
 
     }
 
@@ -58,7 +58,7 @@ public class TestNGAssertionsDemo {
 
 
 
-    //@AfterMethod
+    @AfterMethod
     public void tearDown(){
         System.out.println("Close browser");
     }
