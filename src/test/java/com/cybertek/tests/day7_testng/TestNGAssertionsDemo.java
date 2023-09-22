@@ -20,11 +20,11 @@ public class TestNGAssertionsDemo {
         Driver.get().close();
 
 
-        System.out.println("First Assertion");
-        Assert.assertEquals("title","title");
+        //System.out.println("First Assertion");
+        //Assert.assertEquals("title","title");
 
-        System.out.println("Second Assertion");
-        Assert.assertEquals("url","url");
+        //System.out.println("Second Assertion");
+        //Assert.assertEquals("url","url");
 
     }
 
@@ -56,7 +56,7 @@ public class TestNGAssertionsDemo {
 
 
 
-    @AfterMethod
+    //@AfterMethod
     public void tearDown(){
         System.out.println("Close browser");
     }
